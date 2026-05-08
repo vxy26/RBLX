@@ -2,7 +2,7 @@
 
 ZIP_URL="https://github.com/vxy26/RBLX/releases/download/rbl/afk1.zip"
 ZIP_PATH="/storage/emulated/0/Download/afk1.zip"
-EXTRACT_DIR="/storage/emulated/0/Download"
+EXTRACT_DIR="/storage/emulated/0/Download/afk"
 SOURCE_DIR="/storage/emulated/0/Download/afk"
 DEST_DIR="/data/local/tmp"
 
