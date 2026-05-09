@@ -51,10 +51,14 @@ pm install -r \"$DEST_DIR/Delta-2.718.1110-02.apk\"
 pm install -r \"$DEST_DIR/Delta-2.718.1110-02_clone.apk\"
 
 # Tweak
+setprop debug.hwui.disable_overlays 1
+setprop debug.egl.force_msaa 1
+setprop persist.logd.size 65536
+
 settings put global window_animation_scale 0
 settings put global transition_animation_scale 0
 settings put global animator_duration_scale 0.5
-settings put global background_process_limit 3
+settings put global background_process_limit 4
 settings put system pointer_speed 7
 settings put global mobile_data_always_on 1
 wm density 235
