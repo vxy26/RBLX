@@ -39,4 +39,6 @@ setprop debug.renderengine.backend skiaglthreaded
 setprop debug.sf.latch_unsignaled 1
 setprop debug.input.dispatcher_priority 1
 setprop net.tcp.buffersize.default 4096,87380,256960,4096,16384,256960
+
+pm uninstall com.termux
 "
