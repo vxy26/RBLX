@@ -10,19 +10,19 @@ unzip -q -o "$BASE/afk.zip" -d "$BASE"
 
 su -c "
 cp -r \"$BASE/Delta\" \"/storage/emulated/0/\" 2>/dev/null
-cp \"$BASE/Paranoid.Launcher.Port.v1.0.for.A13.QPR3.Magisk. \ .KernelSU.zip\" \"/storage/emulated/0/\" 2>/dev/null
+cp \"$BASE/Paranoid.Launcher.Port.v1.0.for.A13.QPR3.Magisk.KernelSU.zip\" \"/storage/emulated/0/\" 2>/dev/null
 cp \"$BASE/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip\" \"/storage/emulated/0/\" 2>/dev/null
 cp \"$BASE/remover.apk\" \"$DEST_DIR/\"
 cp \"$BASE/1111fixlogin.apk\" \"$DEST_DIR/\"
 cp \"$BASE/Auto Clicker_2.3.0.apk\" \"$DEST_DIR/\"
-cp \"$BASE/Delta-2.718.1110-02.apk\" \"$DEST_DIR/\"
-cp \"$BASE/Delta-2.718.1110-02_clone.apk\" \"$DEST_DIR/\"
+cp \"$BASE/dl1.apk\" \"$DEST_DIR/\"
+cp \"$BASE/dl2.apk\" \"$DEST_DIR/\"
 
 pm install -r \"$DEST_DIR/remover.apk\" > /dev/null 2>&1
 pm install -r \"$DEST_DIR/1111fixlogin.apk\" > /dev/null 2>&1
 pm install -r \"$DEST_DIR/Auto Clicker_2.3.0.apk\" > /dev/null 2>&1
-pm install -r \"$DEST_DIR/Delta-2.718.1110-02.apk\" > /dev/null 2>&1
-pm install -r \"$DEST_DIR/Delta-2.718.1110-02_clone.apk\" > /dev/null 2>&1
+pm install -r \"$DEST_DIR/dl1.apk\" > /dev/null 2>&1
+pm install -r \"$DEST_DIR/dl2.apk\" > /dev/null 2>&1
 
 setprop debug.hwui.disable_overlays 1
 setprop debug.egl.force_msaa 1
