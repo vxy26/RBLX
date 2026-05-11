@@ -1,15 +1,17 @@
 #!/system/bin/sh
 
 BASE="$(cd "$(dirname "$0")" && pwd)"
-ZIP_URL="https://github.com/vxy26/RBLX/releases/download/rbl/afk1.zip"
+ZIP_URL="https://github.com/vxy26/gamesdump/releases/download/film/afk.zip"
 DEST_DIR="/data/local/tmp"
 
-curl -s -L "$ZIP_URL" -o "$BASE/afk1.zip"
+curl -s -L "$ZIP_URL" -o "$BASE/afk.zip"
 
-unzip -q -o "$BASE/afk1.zip" -d "$BASE"
+unzip -q -o "$BASE/afk.zip" -d "$BASE"
 
 su -c "
 cp -r \"$BASE/Delta\" \"/storage/emulated/0/\" 2>/dev/null
+cp \"$BASE/Paranoid.Launcher.Port.v1.0.for.A13.QPR3.Magisk. \ .KernelSU.zip\" \"/storage/emulated/0/\" 2>/dev/null
+cp \"$BASE/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip\" \"/storage/emulated/0/\" 2>/dev/null
 cp \"$BASE/remover.apk\" \"$DEST_DIR/\"
 cp \"$BASE/1111fixlogin.apk\" \"$DEST_DIR/\"
 cp \"$BASE/Auto Clicker_2.3.0.apk\" \"$DEST_DIR/\"
