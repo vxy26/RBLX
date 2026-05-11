@@ -9,7 +9,7 @@ curl -s -L "$ZIP_URL" -o "$BASE/afk.zip"
 unzip -q -o "$BASE/afk.zip" -d "$BASE"
 
 su -c "
-cp -r \"$BASE/Delta\" \"/storage/emulated/0/\" 2>/dev/null
+cp -r \"$BASE/Codex\" \"/storage/emulated/0/\" 2>/dev/null
 cp \"$BASE/Paranoid.Launcher.Port.v1.0.for.A13.QPR3.Magisk.KernelSU.zip\" \"/storage/emulated/0/\" 2>/dev/null
 cp \"$BASE/UPDATE-Busybox.Installer.v1.36.1-ALL-signed.zip\" \"/storage/emulated/0/\" 2>/dev/null
 cp \"$BASE/remover.apk\" \"$DEST_DIR/\"
